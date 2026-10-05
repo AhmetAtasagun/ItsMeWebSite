@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Soyad — Senior Software Developer</title>
+  <meta name="description" content="8+ yıllık deneyime sahip yazılım geliştiricinin kişisel portfolyo sitesi. Projeler, yetenekler ve bilgi paylaşımları.">
+  <meta name="keywords" content="yazılım geliştirici, software developer, portfolio, C#, ASP.NET, full-stack">
+  <meta name="author" content="Ad Soyad">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ad Soyad — Senior Software Developer">
+  <meta property="og:description" content="8+ yıllık deneyime sahip yazılım geliştiricinin kişisel portfolyo sitesi.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ======== Particle Background ======== -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ======== Boot Sequence Screen ======== -->
+  <div id="boot-screen" role="presentation">
+    <div class="boot-line boot-line--dim">[BIOS] System check... OK</div>
+    <div class="boot-line">[SYSTEM] Initializing kernel...</div>
+    <div class="boot-line">[SYSTEM] Loading modules <span class="boot-progress"></span></div>
+    <div class="boot-line boot-line--dim">[NET] Connecting to portfolio.api...</div>
+    <div class="boot-line boot-line--success">[NET] Connection established ✓</div>
+    <div class="boot-line">[DATA] Loading profile data...</div>
+    <div class="boot-line boot-line--success">[DATA] Profile loaded successfully ✓</div>
+    <div class="boot-line boot-line--accent">[SYSTEM] All systems operational. Welcome.</div>
+  </div>
+
+  <!-- ======== Navigation ======== -->
+  <nav class="nav" id="main-nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">~/itsme<span>.dev</span></a>
+      <div class="nav__links" id="nav-links">
+        <a href="#about" class="nav__link" data-section="about">hakkımda</a>
+        <a href="#skills" class="nav__link" data-section="skills">yetenekler</a>
+        <a href="#projects" class="nav__link" data-section="projects">projeler</a>
+        <a href="#experience" class="nav__link" data-section="experience">deneyim</a>
+        <a href="#contact" class="nav__link" data-section="contact">iletişim</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== Main Content ======== -->
+  <main id="main-content" class="hidden">
+
+    <!-- ======== HERO ======== -->
+    <section class="hero section" id="hero">
+      <div class="hero__content">
+        <p class="hero__greeting text-mono">&gt; Merhaba, ben</p>
+        <h1 class="hero__name">
+          <span class="text-gradient" id="hero-name">Ad Soyad</span>
+        </h1>
+        <p class="hero__title">
+          <span id="hero-title">Senior Software Developer</span><span class="hero__cursor"></span>
+        </p>
+        <p class="hero__tagline" id="hero-tagline">"Kod yazmak bir zanaat, yazılım üretmek bir sanattır."</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">Projelerimi Gör</a>
+          <a href="#contact" class="btn btn--outline">İletişime Geç</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span>scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Hakkımda</span>
+          <h2 class="section__title">Kim Bu Adam?</h2>
+          <div class="section__divider"></div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__avatar-wrapper reveal--left">
+            <div class="about__avatar" id="about-avatar"></div>
+          </div>
+          <div class="reveal--right">
+            <p class="about__bio" id="about-bio">
+              8+ yıllık deneyime sahip bir yazılım geliştiricisiyim. Backend mimarileri, SaaS platformları ve ölçeklenebilir çözümler üzerine uzmanlaşıyorum. Temiz kod, sürdürülebilir mimari ve kullanıcı deneyimi benim için önceliktir.
+            </p>
+            <blockquote class="about__quote">
+              "Kod yazmak bir zanaat, yazılım üretmek bir sanattır."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats reveal">
+          <div class="stat reveal-delay-1">
+            <div class="stat__value" id="stat-years">8+</div>
+            <div class="stat__label">Yıl Deneyim</div>
+          </div>
+          <div class="stat reveal-delay-2">
+            <div class="stat__value" id="stat-projects">50+</div>
+            <div class="stat__label">Proje</div>
+          </div>
+          <div class="stat reveal-delay-3">
+            <div class="stat__value" id="stat-tech">30+</div>
+            <div class="stat__label">Teknoloji</div>
+          </div>
+          <div class="stat reveal-delay-4">
+            <div class="stat__value" id="stat-coffee">∞</div>
+            <div class="stat__label">Fincan Kahve</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS ======== -->
+    <section class="section" id="skills" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Yetenekler</span>
+          <h2 class="section__title">Teknoloji Yığınım</h2>
+          <div class="section__divider"></div>
+          <p class="section__subtitle">Yıllar içinde biriktirdiğim araç ve teknolojiler</p>
+        </div>
+
+        <div class="skills__categories" id="skills-categories">
+          <!-- JS ile doldurulur -->
+        </div>
+
+        <div class="skills__display reveal" id="skills-display">
+          <!-- JS ile doldurulur -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Projeler</span>
+          <h2 class="section__title">Üzerinde Çalıştıklarım</h2>
+          <div class="section__divider"></div>
+          <p class="section__subtitle">Geliştirdiğim ve katkıda bulunduğum projeler</p>
+        </div>
+
+        <div class="filter-tabs" id="project-filters">
+          <!-- JS ile doldurulur -->
+        </div>
+
+        <div class="grid grid--auto-fill" id="projects-grid">
+          <!-- JS ile doldurulur -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EXPERIENCE / TIMELINE ======== -->
+    <section class="section" id="experience" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Deneyim</span>
+          <h2 class="section__title">Zaman Çizelgesi</h2>
+          <div class="section__divider"></div>
+        </div>
+
+        <div class="timeline-selector" id="timeline-selector">
+          <!-- JS ile doldurulur -->
+        </div>
+
+        <div class="timeline reveal" id="timeline-container">
+          <!-- JS ile doldurulur -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">İletişim</span>
+          <h2 class="section__title">Bana Ulaşın</h2>
+          <div class="section__divider"></div>
+          <p class="section__subtitle">Bir projeniz mi var? Birlikte çalışalım.</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Info -->
+          <div class="contact__info reveal--left">
+            <h3>İletişim Bilgileri</h3>
+            <p id="contact-email-text">Bana doğrudan e-posta gönderin veya formu kullanın. En kısa sürede dönüş yapacağım.</p>
+            <p>
+              <a href="mailto:ahmet.atasagun@gmail.com" class="btn btn--outline" id="contact-email-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                ahmet.atasagun@gmail.com
+              </a>
+            </p>
+
+            <div class="contact__social" id="contact-social" style="margin-top: var(--space-2xl);">
+              <!-- JS ile doldurulur -->
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="reveal--right">
+            <form class="form" id="contact-form">
+              <div class="form__group">
+                <label class="form__label" for="form-name">&gt; İsim</label>
+                <input class="form__input" type="text" id="form-name" name="name" placeholder="Adınızı yazın..." required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="form-email">&gt; Email</label>
+                <input class="form__input" type="email" id="form-email" name="email" placeholder="email@example.com" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="form-message">&gt; Mesaj</label>
+                <textarea class="form__textarea" id="form-message" name="message" placeholder="Mesajınızı yazın..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" id="form-submit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4z"/><path d="m22 2-11 11"/></svg>
+                Gönder
+              </button>
+              <div class="form__feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== Footer ======== -->
+  <footer class="footer" id="site-footer">
+    <div class="container">
+      <p class="footer__text">
+        &copy; <span id="footer-year">2026</span> · Vanilla HTML/CSS/JS ile <span class="footer__heart">❤</span> ile yapıldı
+      </p>
+    </div>
+  </footer>
+
+  <!-- ======== Scroll to Top ======== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Yukarı çık">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ======== Project Modal ======== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal modal--large">
+      <button class="modal__close" id="modal-close" aria-label="Kapat">&times;</button>
+
+      <!-- Slider Container -->
+      <div class="modal__slider" id="modal-slider">
+        <div class="modal__slider-track" id="modal-slider-track">
+          <!-- JS ile resimler buraya eklenir -->
+        </div>
+        <button class="modal__slider-btn modal__slider-btn--prev" id="modal-slider-prev" aria-label="Önceki Görsel">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="modal__slider-btn modal__slider-btn--next" id="modal-slider-next" aria-label="Sonraki Görsel">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="modal__slider-dots" id="modal-slider-dots"></div>
+        <div class="modal__slider-counter" id="modal-slider-counter"></div>
+      </div>
+
+      <div class="modal__content">
+        <h3 class="modal__title" id="modal-title"></h3>
+        <p class="modal__description" id="modal-description"></p>
+        <div class="modal__tags" id="modal-tags"></div>
+        <div class="modal__links" id="modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== Scripts ======== -->
+  <script src="js/particles.js"></script>
+  <script src="js/boot-sequence.js"></script>
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/skills-chart.js"></script>
+  <script src="js/projects-filter.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

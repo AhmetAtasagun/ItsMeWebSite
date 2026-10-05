@@ -1,0 +1,77 @@
+[
+  {
+    "id": "career",
+    "title": "Kariyer Yolculuğum",
+    "icon": "💼",
+    "published": true,
+    "order": 1,
+    "events": [
+      {
+        "date": "2024 — Günümüz",
+        "title": "Senior Software Developer",
+        "subtitle": "Şirket Adı",
+        "description": "Kurumsal SaaS platformunun baş geliştiricisi olarak mimari kararlar, kod kalitesi standartları ve takım liderliği.",
+        "tags": ["C#", "ASP.NET Core", "Azure"],
+        "highlight": true
+      },
+      {
+        "date": "2021 — 2024",
+        "title": "Software Developer",
+        "subtitle": "Şirket Adı",
+        "description": "E-ticaret ve fintech projelerinde backend geliştirme. Mikroservis mimarisine geçiş sürecinde aktif rol.",
+        "tags": ["C#", ".NET", "Docker"],
+        "highlight": false
+      },
+      {
+        "date": "2019 — 2021",
+        "title": "Junior Developer",
+        "subtitle": "Şirket Adı",
+        "description": "Web tabanlı iş uygulamaları geliştirme. REST API tasarımı ve veritabanı optimizasyonu.",
+        "tags": ["C#", "SQL Server", "JavaScript"],
+        "highlight": false
+      },
+      {
+        "date": "2018",
+        "title": "Yazılım Stajyeri",
+        "subtitle": "Şirket Adı",
+        "description": "Yazılım geliştirme süreçleri, versiyon kontrolü ve takım çalışmasına ilk adım.",
+        "tags": ["C#", "Git"],
+        "highlight": false
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "title": "Eğitim Hayatım",
+    "icon": "🎓",
+    "published": false,
+    "order": 2,
+    "events": [
+      {
+        "date": "2014 — 2018",
+        "title": "Bilgisayar Mühendisliği",
+        "subtitle": "Üniversite Adı",
+        "description": "Bilgisayar bilimleri, algoritma, veri yapıları ve yazılım mühendisliği üzerine lisans eğitimi.",
+        "tags": ["Algoritma", "Veri Yapıları", "OOP"],
+        "highlight": false
+      }
+    ]
+  },
+  {
+    "id": "personal",
+    "title": "Kişisel Gelişim",
+    "icon": "🌱",
+    "published": false,
+    "order": 3,
+    "events": [
+      {
+        "date": "2023",
+        "title": "Cloud Architecture Sertifikası",
+        "subtitle": "AWS / Azure",
+        "description": "Bulut mimarisi ve dağıtık sistemler üzerine ileri seviye sertifikasyon programı.",
+        "tags": ["Cloud", "Architecture"],
+        "highlight": false
+      }
+    ]
+  }
+]

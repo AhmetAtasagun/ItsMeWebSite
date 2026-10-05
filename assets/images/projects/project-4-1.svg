@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg41" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f14"/>
+      <stop offset="100%" stop-color="#121820"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="12" fill="url(#bg41)" stroke="#27273a" stroke-width="1.5"/>
+  <rect width="800" height="42" rx="12" fill="#121422"/>
+  <rect y="30" width="800" height="12" fill="#121422"/>
+  <line x1="0" y1="42" x2="800" y2="42" stroke="#27273a" stroke-width="1"/>
+  <circle cx="24" cy="21" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="44" cy="21" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="64" cy="21" r="6" fill="#10b981" opacity="0.8"/>
+  <text x="400" y="26" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">runner@devops-node-01: ~/pipeline // Deploy Pipeline</text>
+
+  <!-- Pipeline Stages -->
+  <g transform="translate(30, 65)">
+    <!-- Stage 1 -->
+    <rect width="165" height="75" rx="8" fill="#141e24" stroke="#10b981" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold">1. LINT &amp; BUILD</text>
+    <text x="20" y="55" fill="#f1f5f9" font-family="monospace" font-size="12">✓ Passed (42s)</text>
+
+    <!-- Arrow -->
+    <path d="M 175 38 L 195 38" stroke="#10b981" stroke-width="2"/>
+
+    <!-- Stage 2 -->
+    <rect x="205" width="165" height="75" rx="8" fill="#141e24" stroke="#10b981" stroke-width="1.5"/>
+    <text x="225" y="30" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold">2. DOCKER BUILD</text>
+    <text x="225" y="55" fill="#f1f5f9" font-family="monospace" font-size="12">✓ sha256:8f4c (1m12s)</text>
+
+    <!-- Arrow -->
+    <path d="M 380 38 L 400 38" stroke="#10b981" stroke-width="2"/>
+
+    <!-- Stage 3 -->
+    <rect x="410" width="165" height="75" rx="8" fill="#141e24" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="430" y="30" fill="#06b6d4" font-family="monospace" font-size="11" font-weight="bold">3. SECURITY SCAN</text>
+    <text x="430" y="55" fill="#f1f5f9" font-family="monospace" font-size="12">0 High / 0 Crit</text>
+
+    <!-- Arrow -->
+    <path d="M 585 38 L 605 38" stroke="#06b6d4" stroke-width="2"/>
+
+    <!-- Stage 4 -->
+    <rect x="615" width="125" height="75" rx="8" fill="#182329" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="630" y="30" fill="#a78bfa" font-family="monospace" font-size="11" font-weight="bold">4. K8S DEPLOY</text>
+    <text x="630" y="55" fill="#10b981" font-family="monospace" font-size="12">Live ⚡</text>
+  </g>
+
+  <!-- Terminal log streaming -->
+  <g transform="translate(30, 160)">
+    <rect width="740" height="255" rx="8" fill="#090d12" stroke="#1e2733"/>
+    <text x="20" y="30" fill="#94a3b8" font-family="monospace" font-size="11">bash$ ./deploy.sh --env=production --cluster=eu-central-1</text>
+    <text x="20" y="60" fill="#06b6d4" font-family="monospace" font-size="11">[CI] Authenticating to private container registry registry.internal:5000...</text>
+    <text x="20" y="85" fill="#10b981" font-family="monospace" font-size="11">[CI] Image pushed: registry.internal:5000/app-core:release-v2.8.4</text>
+    <text x="20" y="110" fill="#94a3b8" font-family="monospace" font-size="11">[K8s] Rolling update initiated for Deployment 'itsme-core' (3 replicas)</text>
+    <text x="20" y="135" fill="#10b981" font-family="monospace" font-size="11">[K8s] Pod 'itsme-core-79d5bf599-4xz8j' is Ready (1/1)</text>
+    <text x="20" y="160" fill="#10b981" font-family="monospace" font-size="11">[K8s] Zero-downtime switch completed in 4.2 seconds.</text>
+    <text x="20" y="195" fill="#a78bfa" font-family="monospace" font-size="12" font-weight="bold">&gt;&gt; Pipeline Status: SUCCESS (Execution time: 2m 14s)</text>
+  </g>
+</svg>

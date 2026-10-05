@@ -1,0 +1,27 @@
+{
+  "name": "Ad Soyad",
+  "title": "Senior Software Developer",
+  "tagline": "Kod yazmak bir zanaat, yazılım üretmek bir sanattır.",
+  "bio": "8+ yıllık deneyime sahip bir yazılım geliştiricisiyim. Backend mimarileri, SaaS platformları ve ölçeklenebilir çözümler üzerine uzmanlaşıyorum. Temiz kod, sürdürülebilir mimari ve kullanıcı deneyimi benim için önceliktir.",
+  "email": "ahmet.atasagun@gmail.com",
+  "location": "Türkiye",
+  "avatarUrl": "assets/images/avatar.webp",
+  "resumeUrl": "#",
+  "stats": {
+    "yearsExperience": "8+",
+    "projectsCompleted": "50+",
+    "technologiesUsed": "30+",
+    "cupsOfCoffee": "∞"
+  },
+  "social": {
+    "github": "https://github.com/kullaniciadi",
+    "linkedin": "https://linkedin.com/in/kullaniciadi",
+    "twitter": "https://twitter.com/kullaniciadi",
+    "medium": ""
+  },
+  "meta": {
+    "siteTitle": "Ad Soyad — Senior Software Developer",
+    "description": "8+ yıllık deneyime sahip yazılım geliştiricinin kişisel portfolyo sitesi. Projeler, yetenekler ve bilgi paylaşımları.",
+    "keywords": "yazılım geliştirici, software developer, portfolio, C#, ASP.NET, full-stack"
+  }
+}

@@ -1,0 +1,110 @@
+/* ============================================
+   ItsMe — Design Tokens
+   ============================================ */
+
+:root {
+  /* ---- Renkler ---- */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #10101a;
+  --bg-tertiary: #1a1a2e;
+  --bg-card: rgba(26, 26, 46, 0.55);
+  --bg-card-hover: rgba(26, 26, 46, 0.8);
+
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0a0a0f;
+
+  --accent-primary: #00ffc8;
+  --accent-secondary: #7c3aed;
+  --accent-tertiary: #f472b6;
+  --accent-warning: #f59e0b;
+
+  --border-subtle: rgba(226, 232, 240, 0.08);
+  --border-accent: rgba(0, 255, 200, 0.25);
+
+  /* ---- Glow / Shadow ---- */
+  --neon-glow: 0 0 10px rgba(0, 255, 200, 0.3), 0 0 40px rgba(0, 255, 200, 0.1);
+  --neon-glow-strong: 0 0 10px rgba(0, 255, 200, 0.5), 0 0 60px rgba(0, 255, 200, 0.2), 0 0 100px rgba(0, 255, 200, 0.1);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --card-glow: 0 0 20px rgba(124, 58, 237, 0.15);
+
+  /* ---- Glassmorphism ---- */
+  --glass-bg: rgba(16, 16, 26, 0.6);
+  --glass-border: rgba(226, 232, 240, 0.06);
+  --glass-blur: 16px;
+
+  /* ---- Tipografi ---- */
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  --fs-4xl: 2.25rem;
+  --fs-5xl: 3rem;
+  --fs-6xl: 3.75rem;
+  --fs-7xl: 4.5rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.15;
+  --lh-base: 1.6;
+  --lh-relaxed: 1.8;
+
+  /* ---- Spacing ---- */
+  --space-2xs: 0.125rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+  --space-6xl: 10rem;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+
+  --transition-fast: 150ms var(--ease-out-expo);
+  --transition-base: 300ms var(--ease-out-expo);
+  --transition-slow: 500ms var(--ease-out-expo);
+  --transition-slower: 800ms var(--ease-out-expo);
+
+  /* ---- Z-index ---- */
+  --z-behind: -1;
+  --z-base: 1;
+  --z-above: 10;
+  --z-nav: 50;
+  --z-overlay: 100;
+  --z-modal: 200;
+  --z-boot: 1000;
+
+  /* ---- Container ---- */
+  --container-max: 1200px;
+  --container-narrow: 800px;
+  --container-padding: 1.5rem;
+
+  /* ---- Section ---- */
+  --section-padding: var(--space-5xl) 0;
+}
