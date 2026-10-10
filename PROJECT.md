@@ -25,5 +25,8 @@ Statik kişisel web sitesi (SPA-like, tek sayfa)
 | `data/skills.json` | Yetenekler | Yok (kategoriler arası geçiş) |
 
 ## Son Güncelleme
+- **2026-10-10:** Giriş ekranındaki güvenlik açığı (şifre sıfırlama butonu) kaldırıldı. Panel içi bağımsız Şifre Değiştirme ve JSON İndirme modalları aktif edildi.
+- **2026-10-09:** Yönetim paneline SHA-256 hash korumalı oturum/giriş sistemi (Auth Gate) eklendi. GitHub API bağlantı protokolü Bearer standardına güncellendi.
+- **2026-10-08:** Web tabanlı dahili yönetim paneli (`admin.html`) geliştirildi. GitHub REST API Direct Deploy ve JSON Dışa Aktar desteği eklendi.
 - **2026-10-06:** İletişim formu canlı e-posta gönderimi (`ahmet.atasagun@gmail.com` - FormSubmit AJAX) entegre edildi. Proje detay modalı genişletildi (`modal--large`), SVG mock-up grafikleriyle çoklu görsel slider (önceki/sonraki, dots, sayaç, klavye gezinimi) eklendi.
 - **2026-10-06:** Proje oluşturuldu — tüm altyapı, bölümler ve deploy mekanizması

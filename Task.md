@@ -43,6 +43,17 @@
 - [x] Mobile responsive navigation
 - [x] SEO meta etiketleri
 
+### Aşama 9: Yönetim Paneli (Admin Console)
+- [x] `admin.html` web tabanlı arayüz tasarımı (terminal/dark konseptine uyumlu)
+- [x] `css/admin.css` ve `js/admin.js` modülleri
+- [x] **Panel Güvenliği (Auth Gate):** SHA-256 hash korumalı oturum/parola ekranı, oturum içinden şifre değiştirme modalı ve güvenli çıkış
+- [x] Genel Bilgiler (`site.json`) form yönetimi
+- [x] Projeler (`projects.json`) ekleme, düzenleme, silme, yayında/taslak toggle modalı
+- [x] Yetenekler (`skills.json`) ve Zaman Çizelgesi (`timelines.json`) düzenleme ekranları
+- [x] **GitHub REST API v3 Entegrasyonu:** Bearer token sanitization, açıklayıcı 401/404 hata yakalama, tek tıkla commit & push
+- [x] **JSON İndirme & Dışa Aktarma Merkezi:** Tekil/toplu JSON indirme ve dosya yolu rehberi modalı
+- [x] Footer'a gizli/zarif `⚙ admin` bağlantısı
+
 ---
 
 ## 📋 Bekleyen Görevler

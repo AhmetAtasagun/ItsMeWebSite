@@ -15,15 +15,13 @@
   const lines = bootScreen.querySelectorAll('.boot-line');
   const progressEl = bootScreen.querySelector('.boot-progress');
 
-  // Check if already visited in this session
-  const skipBoot = sessionStorage.getItem('itsme-booted');
-
-  if (skipBoot) {
+  // Boot sequence runs on every reload/visit
+  // User can click anywhere on the boot screen to skip immediately if in a hurry
+  bootScreen.addEventListener('click', () => {
     bootScreen.classList.add('boot-done');
     mainContent.classList.remove('hidden');
     if (footer) footer.style.opacity = '1';
-    return;
-  }
+  });
 
   // Progress bar animation
   const progressChars = '█';

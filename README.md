@@ -12,6 +12,7 @@
 - **Canlı İletişim Formu:** Terminal geri bildirimli, doğrudan `ahmet.atasagun@gmail.com` adresine canlı e-posta gönderimi (FormSubmit AJAX entegrasyonu)
 - **3D Tilt Kartlar:** Hover'da perspektif efekti
 - **Scroll Reveal:** Intersection Observer tabanlı animasyonlar
+- **Dahili Yönetim Paneli (`admin.html`):** Tarayıcı üzerinden formlarla tüm içerikleri (site, projeler, yetenekler, deneyimler) düzenleme, tek tıkla GitHub REST API üzerinden commit & push atıp canlıya alma veya JSON indirme
 - **Responsive:** Tüm cihazlarda kusursuz
 - **Erişilebilir:** `prefers-reduced-motion` desteği, semantic HTML
 - **Otomatik Deploy:** GitHub Pages + GitHub Actions
