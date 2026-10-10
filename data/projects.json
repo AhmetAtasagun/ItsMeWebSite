@@ -4,7 +4,13 @@
     "title": "SaaS Platform",
     "description": "Multi-tenant mimari üzerinde çalışan kapsamlı bir SaaS platformu. Abonelik yönetimi, kullanıcı izolasyonu ve otomatik faturalandırma modülleri içerir.",
     "longDescription": "Sıfırdan tasarlanmış, multi-tenant mimariye sahip bir SaaS platformu. Tenant izolasyonu, rol bazlı yetkilendirme, abonelik planları ve ödeme entegrasyonu gibi temel SaaS bileşenlerini içerir.",
-    "tags": ["C#", "ASP.NET Core", "RazorPages", "PostgreSQL", "Redis"],
+    "tags": [
+      "C#",
+      "ASP.NET Core",
+      "RazorPages",
+      "PostgreSQL",
+      "Redis"
+    ],
     "category": "backend",
     "imageUrl": "assets/images/projects/project-1-1.svg",
     "images": [
@@ -22,7 +28,13 @@
     "title": "E-Ticaret API",
     "description": "Yüksek trafikli bir e-ticaret platformu için RESTful API. Mikroservis mimarisi, event-driven iletişim ve CQRS pattern kullanılarak geliştirildi.",
     "longDescription": "Yüksek performanslı, ölçeklenebilir bir e-ticaret backend sistemi. Sipariş yönetimi, envanter takibi, ödeme işleme ve bildirim servisleri içerir.",
-    "tags": ["C#", ".NET 8", "RabbitMQ", "Docker", "MongoDB"],
+    "tags": [
+      "C#",
+      ".NET 8",
+      "RabbitMQ",
+      "Docker",
+      "MongoDB"
+    ],
     "category": "backend",
     "imageUrl": "assets/images/projects/project-2-1.svg",
     "images": [
@@ -40,7 +52,12 @@
     "title": "Gerçek Zamanlı Dashboard",
     "description": "WebSocket ile canlı veri akışı sağlayan analitik dashboard. Grafikler, KPI kartları ve alarm sistemleri içerir.",
     "longDescription": "SignalR üzerinden gerçek zamanlı veri iletimi, Chart.js ile dinamik grafikler ve kullanıcı bazlı dashboard özelleştirmesi sunar.",
-    "tags": ["SignalR", "JavaScript", "Chart.js", "ASP.NET Core"],
+    "tags": [
+      "SignalR",
+      "JavaScript",
+      "Chart.js",
+      "ASP.NET Core"
+    ],
     "category": "fullstack",
     "imageUrl": "assets/images/projects/project-3-1.svg",
     "images": [
@@ -58,7 +75,13 @@
     "title": "DevOps Otomasyon Aracı",
     "description": "CI/CD pipeline yönetimi, sunucu izleme ve otomatik deployment süreçlerini tek panelden yöneten bir araç.",
     "longDescription": "Docker container orchestration, GitHub Actions entegrasyonu ve Slack bildirim sistemi ile donatılmış kapsamlı bir DevOps yönetim paneli.",
-    "tags": ["Docker", "GitHub Actions", "Linux", "Bash", "Nginx"],
+    "tags": [
+      "Docker",
+      "GitHub Actions",
+      "Linux",
+      "Bash",
+      "Nginx"
+    ],
     "category": "devops",
     "imageUrl": "assets/images/projects/project-4-1.svg",
     "images": [
