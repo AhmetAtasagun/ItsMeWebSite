@@ -6,11 +6,31 @@
       "icon": "⚙️",
       "color": "#00ffc8",
       "skills": [
-        { "name": "C# / .NET", "level": 95, "years": 8 },
-        { "name": "ASP.NET Core", "level": 92, "years": 6 },
-        { "name": "REST API Design", "level": 90, "years": 7 },
-        { "name": "Entity Framework", "level": 88, "years": 6 },
-        { "name": "Microservices", "level": 80, "years": 3 }
+        {
+          "name": "C# / .NET",
+          "level": 95,
+          "years": 8
+        },
+        {
+          "name": "ASP.NET Core",
+          "level": 92,
+          "years": 6
+        },
+        {
+          "name": "REST API Design",
+          "level": 90,
+          "years": 7
+        },
+        {
+          "name": "Entity Framework",
+          "level": 88,
+          "years": 6
+        },
+        {
+          "name": "Microservices",
+          "level": 80,
+          "years": 3
+        }
       ]
     },
     {
@@ -19,11 +39,31 @@
       "icon": "🎨",
       "color": "#7c3aed",
       "skills": [
-        { "name": "HTML / CSS", "level": 90, "years": 8 },
-        { "name": "JavaScript", "level": 85, "years": 7 },
-        { "name": "Razor Pages", "level": 88, "years": 5 },
-        { "name": "Bootstrap / UI", "level": 82, "years": 6 },
-        { "name": "jQuery", "level": 78, "years": 5 }
+        {
+          "name": "HTML / CSS",
+          "level": 90,
+          "years": 8
+        },
+        {
+          "name": "JavaScript",
+          "level": 85,
+          "years": 7
+        },
+        {
+          "name": "Razor Pages",
+          "level": 88,
+          "years": 5
+        },
+        {
+          "name": "Bootstrap / UI",
+          "level": 82,
+          "years": 6
+        },
+        {
+          "name": "jQuery",
+          "level": 78,
+          "years": 5
+        }
       ]
     },
     {
@@ -32,10 +72,26 @@
       "icon": "🗄️",
       "color": "#f472b6",
       "skills": [
-        { "name": "SQL Server", "level": 90, "years": 7 },
-        { "name": "PostgreSQL", "level": 82, "years": 4 },
-        { "name": "Redis", "level": 75, "years": 3 },
-        { "name": "MongoDB", "level": 70, "years": 2 }
+        {
+          "name": "SQL Server",
+          "level": 90,
+          "years": 7
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 82,
+          "years": 4
+        },
+        {
+          "name": "Redis",
+          "level": 75,
+          "years": 3
+        },
+        {
+          "name": "MongoDB",
+          "level": 70,
+          "years": 2
+        }
       ]
     },
     {
@@ -44,11 +100,31 @@
       "icon": "🚀",
       "color": "#f59e0b",
       "skills": [
-        { "name": "Git / GitHub", "level": 92, "years": 8 },
-        { "name": "Docker", "level": 78, "years": 3 },
-        { "name": "CI/CD", "level": 75, "years": 3 },
-        { "name": "Linux", "level": 72, "years": 4 },
-        { "name": "Azure / AWS", "level": 68, "years": 2 }
+        {
+          "name": "Git / GitHub",
+          "level": 92,
+          "years": 8
+        },
+        {
+          "name": "Docker",
+          "level": 78,
+          "years": 3
+        },
+        {
+          "name": "CI/CD",
+          "level": 75,
+          "years": 3
+        },
+        {
+          "name": "Linux",
+          "level": 72,
+          "years": 4
+        },
+        {
+          "name": "Azure / AWS",
+          "level": 68,
+          "years": 2
+        }
       ]
     }
   ]
