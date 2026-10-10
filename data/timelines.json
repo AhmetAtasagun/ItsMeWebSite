@@ -11,7 +11,11 @@
         "title": "Senior Software Developer",
         "subtitle": "Şirket Adı",
         "description": "Kurumsal SaaS platformunun baş geliştiricisi olarak mimari kararlar, kod kalitesi standartları ve takım liderliği.",
-        "tags": ["C#", "ASP.NET Core", "Azure"],
+        "tags": [
+          "C#",
+          "ASP.NET Core",
+          "Azure"
+        ],
         "highlight": true
       },
       {
@@ -19,7 +23,11 @@
         "title": "Software Developer",
         "subtitle": "Şirket Adı",
         "description": "E-ticaret ve fintech projelerinde backend geliştirme. Mikroservis mimarisine geçiş sürecinde aktif rol.",
-        "tags": ["C#", ".NET", "Docker"],
+        "tags": [
+          "C#",
+          ".NET",
+          "Docker"
+        ],
         "highlight": false
       },
       {
@@ -27,7 +35,11 @@
         "title": "Junior Developer",
         "subtitle": "Şirket Adı",
         "description": "Web tabanlı iş uygulamaları geliştirme. REST API tasarımı ve veritabanı optimizasyonu.",
-        "tags": ["C#", "SQL Server", "JavaScript"],
+        "tags": [
+          "C#",
+          "SQL Server",
+          "JavaScript"
+        ],
         "highlight": false
       },
       {
@@ -35,7 +47,10 @@
         "title": "Yazılım Stajyeri",
         "subtitle": "Şirket Adı",
         "description": "Yazılım geliştirme süreçleri, versiyon kontrolü ve takım çalışmasına ilk adım.",
-        "tags": ["C#", "Git"],
+        "tags": [
+          "C#",
+          "Git"
+        ],
         "highlight": false
       }
     ]
@@ -44,7 +59,7 @@
     "id": "education",
     "title": "Eğitim Hayatım",
     "icon": "🎓",
-    "published": false,
+    "published": true,
     "order": 2,
     "events": [
       {
@@ -52,7 +67,11 @@
         "title": "Bilgisayar Mühendisliği",
         "subtitle": "Üniversite Adı",
         "description": "Bilgisayar bilimleri, algoritma, veri yapıları ve yazılım mühendisliği üzerine lisans eğitimi.",
-        "tags": ["Algoritma", "Veri Yapıları", "OOP"],
+        "tags": [
+          "Algoritma",
+          "Veri Yapıları",
+          "OOP"
+        ],
         "highlight": false
       }
     ]
@@ -69,7 +88,10 @@
         "title": "Cloud Architecture Sertifikası",
         "subtitle": "AWS / Azure",
         "description": "Bulut mimarisi ve dağıtık sistemler üzerine ileri seviye sertifikasyon programı.",
-        "tags": ["Cloud", "Architecture"],
+        "tags": [
+          "Cloud",
+          "Architecture"
+        ],
         "highlight": false
       }
     ]
